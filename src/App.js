@@ -4,6 +4,7 @@ import NoMatch from "./Components/NoMatch/NoMatch";
 import Login from "./Components/Login/Login";
 import Signup from "./Components/Signup/Signup";
 import Session from "./Components";
+import "./App.css";
 
 const App = () => {
   const handleContextMenu = (e) => {
