@@ -1,0 +1,26 @@
+footer {
+    height: 8vh;
+    width: 84vw;
+    justify-content: space-between!important;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-policy,
+.footer-terms {
+    font-weight: bold;
+    color: #292545;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+@media (max-width: 676px) {
+    footer,
+    .footer-left {
+        flex-direction: column;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
