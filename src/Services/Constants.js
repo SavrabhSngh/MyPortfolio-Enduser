@@ -6,3 +6,9 @@ export const DrawerInfo = {
   Contact: "ContactPage",
   Logout: "Logout",
 };
+
+export const PopoverData = {
+  Account: "ManageAccounts",
+  Contact: "ContactPage",
+  Logout: "Logout",
+};
