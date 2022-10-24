@@ -16,8 +16,8 @@ import { styled } from "@mui/material/styles";
 import { tableCellClasses } from "@mui/material/TableCell";
 
 const Education = () => {
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
+  function createData(qualification, institute, passYear, percent) {
+    return { qualification, institute, passYear, percent };
   }
 
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -45,7 +45,7 @@ const Education = () => {
       <Divider />
       <CardContent>
         <TableContainer>
-          <Table aria-label="simple table">
+          <Table aria-label="customized table" sx={{ width: "100%" }}>
             <TableHead>
               <TableRow>
                 <StyledTableCell align="center">Sr. No.</StyledTableCell>
@@ -67,11 +67,14 @@ const Education = () => {
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell align="center">{index + 1}</TableCell>
-                  <TableCell align="center">{row.name}</TableCell>
-                  <TableCell align="center">{row.calories}</TableCell>
-                  <TableCell align="center">{row.fat}</TableCell>
-                  <TableCell align="center">{row.carbs}</TableCell>
-                  <TableCell align="center">{row.protein}</TableCell>
+                  <TableCell align="center">{row.qualification}</TableCell>
+                  <TableCell align="center">{row.institute}</TableCell>
+                  <TableCell align="center">{row.passYear}</TableCell>
+                  <TableCell align="center">{row.percent}</TableCell>
+                  <TableCell align="center">
+                    <i className="fas fa-edit"></i>
+                    <i className="fas fa-trash"></i>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>

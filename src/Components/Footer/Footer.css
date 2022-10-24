@@ -1,5 +1,4 @@
 footer {
-    height: 8vh;
     width: 84vw;
     justify-content: space-between!important;
     position: fixed;
@@ -15,12 +14,13 @@ footer {
 }
 
 @media (max-width: 676px) {
-    footer,
     .footer-left {
         flex-direction: column;
     }
 
     footer {
         width: 100vw;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -5,6 +5,7 @@ import PictureAsPdf from "@mui/icons-material/PictureAsPdf";
 import Settings from "@mui/icons-material/Settings";
 import ContactPage from "@mui/icons-material/ContactPage";
 import Logout from "@mui/icons-material/Logout";
+import Login from "@mui/icons-material/Login";
 import School from "@mui/icons-material/School";
 
 const GetIcons = (param) => {
@@ -23,6 +24,8 @@ const GetIcons = (param) => {
       return <ContactPage />;
     case "Logout":
       return <Logout />;
+    case "Login":
+      return <Login />;
     case "School":
       return <School />;
     default:
